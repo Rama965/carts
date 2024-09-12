@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+
+        .heading{
+            font-weight: bold ;
+            margin-left: 10px;
+            height: 50px;
+            width: 250px;
+            margin-bottom: 15px;
+
+        }
+        .img1{
+            padding-left: 10px;
+        }
+        #description1{
+            height: 40px;
+            width: 120px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+        .img2{
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+        #description2{
+            height: 40px;
+            width: 120px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+        .img3{
+            margin-top: -310px;
+            padding-left: 155px;
+        }
+        #description3{
+            height: 40px;
+            width: 120px;
+            margin-left: 155px;
+        }
+        .img4{
+            margin-left: 155px;
+            margin-top: 4px;
+        }
+        #description4{
+            height: 40px;
+            width: 120px;
+            margin-left: 155px;
+        }
+        body{
+            background-color: antiquewhite;
+            width: 97vw;
+        }
+        #explore{
+            padding-left: 15px;
+            margin-top: 14px;
+        }
+
+        #a{grid-area: a1;}
+        #b{grid-area: b1;}
+        #c{grid-area: c1;}
+        #d{grid-area: d1;}
+        #e{grid-area: e1;}
+        #f{grid-area: f1;}
+        #g{grid-area: g1;}
+        #h{grid-area: h1;}
+        #box{
+            display: grid;
+            grid-template-areas: "a1 b1 c1 d1" "e1 f1 g1 h1";
+            height: 940px;
+            width: 1230px;
+            margin-left: 10px;
+            margin-top: 10px;
+
+        }
+        
+        #a{
+            background-color: white;
+            margin: 10px;
+        }
+        #b{
+            background-color: white;
+            margin: 10px;
+        }
+        #c{
+            background-color: white;
+            margin: 10px;
+        }
+        #d{
+            background-color: white;
+            margin: 10px;
+        }
+
+        #e{
+            background-color: white;
+            margin: 10px;
+        }
+        #f{
+            background-color: white;
+            margin: 10px;
+        }
+        #g{
+            background-color: white;
+            margin: 10px;
+        }
+        #h{
+            background-color: white;
+            margin: 10px;
+        }
+
+        #box2{
+            height: 250px;
+            width: 1220px;
+            background-color: white;
+            margin-left: 15px;
+            margin-top: -10px;
+        }
+        #heading2{
+            padding-left: 13px;
+        
+        }
+        #box3{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+        }
+        #image1{
+            margin-left: 5px;
+            margin-right: 20px;
+        }
+        #image2{
+            margin-right: 20px;
+        }
+        #image3{
+            margin-right: 20px;
+        }
+        #image4{
+            margin-right: 20px;
+        }
+        #image5{
+            margin-right: 20px;
+        }
+        #image6{
+            margin-right: 20px;
+        }
+        #image7{
+            margin-right: 20px;
+        }
+        h3{
+            padding-top: 12px;
+            font-size: 23px;
+        }
+        #signin{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            background-color: white;
+        
+        }
+        .person{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            width: 290px;
+            height: 27px;
+            background-color: rgb(247, 187, 75);
+            border-color: rgb(234, 167, 86);
+            border-radius: 3px;
+        }
+        .button{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #button2{
+            background-color: rgb(13, 51, 75);
+            border-color: grey;
+            border-radius: 0px;
+            height: 60px;
+            width: 1239px;
+            color: white;
+            margin-top: -8px;
+        }
+        #footer{
+            position: relative;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+        }
+        #footer1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(90, 86, 86);
+        }
+        p{
+            font-weight: bold;
+            padding-left: 30px;
+            margin-top: 10px;
+            margin: 10px;
+            font-size: 20px;
+            color: white;
+        }
+        ul{
+            margin-left: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        li{
+            margin: 5px;
+            color: white;
+        }
+        #thanks{
+            font-size: 50px;
+            text-align: center;
+            text-decoration: double;
+            text-shadow: 5px 5px 5px rgb(39, 34, 145);
+            color: white;
+        }
+        #heart{
+            font-size: 50px;
+            text-align: center;
+            text-shadow: 5px 5px 5px red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <header id="head">
+         <div class="head1">All</div>
+         <div class="head1">Fresh</div>
+         <div class="head1">Amazon miniTv</div>
+         <div class="head1">Sell</div>
+         <div class="head1">Best Sellers</div>
+         <div class="head1">Mobiles</div>
+         <div class="head1">Today's Deals</div>
+         <div class="head1">Customer Service</div>
+         <div class="head1">Prime</div>
+         <div class="head1">Electronics</div>
+         <div class="head1">Fashion</div>
+         <div class="head1">New Releases</div>
+         <div class="head1">Home and kitchen</div>
+         <div class="head1">Amazon Pay</div>
+    </header> -->
+    <div id="box">
+       <div id="a">
+        <div class="heading"><h2>Revamp your home in style</h2></div>
+        <img class="img1" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_furnishings_2._SY232_CB555629502_.jpg" alt="net issue" height="100px" width="120px"><br>
+        <div id="description1">Cushion covers, bedsheets & more</div>
+        <img class="img2" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_storage_1._SY232_CB555629502_.jpg" alt="net issue" height="100px" width="120px"><br>
+        <div id="description2">Home storage</div>
+        <div class="img3"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_decor_1._SY232_CB555629502_.jpg" alt="net issue" height="100px" width="120px"></div>
+        <div id="description3">Figurines, vases &more</div><br>
+        <img class="img4" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_lighting_2_-_Copy._SY232_CB555629502_.jpg" alt="net issue" height="100px" width="120px">
+        <div id="description4">Lighting solutions</div>
+        <div id="explore"><a href="https://www.amazon.in/ref=nav_logo">Explore all</a></div>
+       </div>
+
+        <div id="b">
+            <div class="heading"><h2>Appliances for your home | Up to 55% off</h2></div>
+            <img class="img1" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-372x232----B08RDL6H79._SY232_CB667322346_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description1">Air conditioners</div>
+            <img class="img2" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B07G5J5FYP._SY232_CB667322346_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description2">Microwaves</div>
+            <div class="img3"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B08345R1ZW---372x232._SY232_CB667322346_.jpg" alt="net issue" height="100px" width="120px"></div>
+            <div id="description3">Refridgerators</div><br>
+            <img class="img4" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08CPQVLZT._SY232_CB667322346_.jpg" alt="net issue" height="100px" width="120px">
+            <div id="description4">Waching machines</div>
+            <div id="explore"><a href="https://www.amazon.in/ref=nav_logo">See more</a></div>
+        </div>
+
+        <div id="c">
+                <div class="heading"><h2>Starting ₹149 | Headphones</h2></div>
+                <img class="img1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt._SY232_CB553870684_.jpg" alt="net issue" height="100px" width="120px"><br>
+                <div id="description1">Starting ₹249 | boAt</div>
+                <img class="img2" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise._SY232_CB553870684_.jpg" alt="net issue" height="100px" width="120px"><br>
+                <div id="description2">Starting ₹649 | Noise</div>
+                <div class="img3"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult._SY232_CB553870684_.jpg" alt="net issue" height="100px" width="120px"></div>
+                <div id="description3">Starting ₹149 | Zebronics</div><br>
+                <img class="img4" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_1._SY232_CB570220221_.jpg" alt="net issue" height="100px" width="120px">
+                <div id="description4">Lighting solutions</div>
+                <div id="explore"><a href="https://www.amazon.in/ref=nav_logo">See all offers</a></div>
+        </div>
+
+        <div id="d">
+            <div class="heading"><h2>Starting ₹99 | Amazon Brands & more</h2></div>
+            <img class="img1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/QC_372_All_customer_july_2._SY232_CB567469224_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description1">Starting ₹299 Home storage</div>
+            <img class="img2" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_372_Updated._SY232_CB567468621_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description2">Starting ₹99 | Toys and games</div>
+            <div class="img3"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/QC_372_All_customer_july_3._SY232_CB567469124_.jpg" alt="net issue" height="100px" width="120px"></div>
+            <div id="description3">Upto 60% off | Storage and racks</div><br>
+            <img class="img4" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/QC_372_All_customer_july_1._SY232_CB567469124_.jpg" alt="net issue" height="100px" width="120px">
+            <div id="description4">Upto 60%off | Jackets, dresses</div>
+            <div id="explore"><a href="https://www.amazon.in/ref=nav_logo">Shop now</a></div>
+        </div>
+
+        <div id="e">
+            <div class="heading"><h2>Starting ₹199 | Amazon Brands & more</h2></div>
+            <img class="img1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_372_2._SY232_CB567468220_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description1">Starting ₹99 | Bedsheets</div>
+            <img class="img2" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_372_4._SY232_CB567468220_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description2">Minimum 40% off | Ironing board & more</div>
+            <div class="img3"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_372_3._SY232_CB567468220_.jpg" alt="net issue" height="100px" width="120px"></div>
+            <div id="description3">Starting ₹199 | Curtions</div><br>
+            <img class="img4" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_372_1._SY232_CB567468220_.jpg" alt="net issue" height="100px" width="120px">
+            <div id="description4">Upto 60% off | Home decor</div>
+            <div id="explore"><a href="https://www.amazon.in/ref=nav_logo">Explore all</a></div>
+           </div>
+
+           <div id="f">
+            <div class="heading"><h2>Up to 60% off | Professional tools</h2></div>
+            <img class="img1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2018/QC/Tools2x._SY232_CB424026090_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description1">Professional tools</div>
+            <img class="img2" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/372X2321._SY232_CB643952553_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description2">Cleaning supplies</div>
+            <div class="img3"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/372X2322._SY232_CB643952553_.jpg" alt="net issue" height="100px" width="120px"></div>
+            <div id="description3">Measuring instruments</div><br>
+            <img class="img4" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2018/QC/med2x._SY232_CB424026091_.jpg" alt="net issue" height="100px" width="120px">
+            <div id="description4">Medical supplies</div>
+            <div id="explore"><a href="https://www.amazon.in/ref=nav_logo">See more</a></div>
+           </div>
+
+           <div id="g">
+            <div class="heading"><h2>Automotive essentials | Up to 60% off</h2></div>
+            <img class="img1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare2x._SY232_CB410830552_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description1">Cleaning accessories</div>
+            <img class="img2" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_372x232._SY232_CB405083904_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description2">Helmets</div>
+            <div class="img3"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare2x._SY232_CB410830552_.jpg" alt="net issue" height="100px" width="120px"></div>
+            <div id="description3">Tyre & rim care</div><br>
+            <img class="img4" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum2x._SY232_CB410830555_.jpg" alt="net issue" height="100px" width="120px">
+            <div id="description4">Vaccum Cleaner</div>
+            <div id="explore"><a href="https://www.amazon.in/ref=nav_logo">See more</a></div>
+           </div>
+
+           <div id="h">
+            <div class="heading"><h2>Up to 60% off | Styles for women</h2></div>
+            <img class="img1" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF1-372-232._SY232_CB636048992_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description1">Women's clothing</div>
+            <img class="img2" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-372-232._SY232_CB636048992_.jpg" alt="net issue" height="100px" width="120px"><br>
+            <div id="description2">Watches</div>
+            <div class="img3"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-372-232._SY232_CB636048992_.jpg" alt="net issue" height="100px" width="120px"></div>
+            <div id="description3">Footware + Handbags</div><br>
+            <img class="img4" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-372-232._SY232_CB636048992_.jpg" alt="net issue" height="100px" width="120px">
+            <div id="description4">Fashion Jewellery</div>
+            <div id="explore"><a href="https://www.amazon.in/ref=nav_logo">End of season sale</a></div>
+           </div>
+    </div>
+
+    <div id="box2">
+        <div id="heading2"><h3>Best Sellers in Clothing & Accessories</h3></div>
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+        <div id="box3">
+        <div id="image1"><img src="https://m.media-amazon.com/images/I/81TRdxk1wnL._AC_SY400_.jpg" alt="net issue" height="150px" width="150px"></div>
+        <div id="image2"><img src="https://m.media-amazon.com/images/I/610InQb9rTL._AC_SY400_.jpg" alt="net issue" height="150px" width="150px"></div>
+        <div id="image3"><img src="https://m.media-amazon.com/images/I/51NSC2qvOxL._AC_SY400_.jpg" alt="net issue" height="150px" width="150px"></div>
+        <div id="image4"><img src="https://m.media-amazon.com/images/I/71x4rLhMkML._AC_SY400_.jpg" alt="net issue" height="150px" width="150px"></div>
+        <div id="image5"><img src="https://m.media-amazon.com/images/I/61SgADmAyDL._AC_SY400_.jpg" alt="net issue" height="150px" width="150px"></div>
+        <div id="image6"><img src="https://m.media-amazon.com/images/I/713n+TxyfCL._AC_SY400_.jpg" alt="net issue" height="150px" width="150px"></div>
+        <div id="image6"><img src="https://m.media-amazon.com/images/I/61D7nbhylBL._AC_SY400_.jpg" alt="net issue" height="150px" width="150px"></div>
+        <div id="image7"><img src="https://m.media-amazon.com/images/I/610IIi6wHuL._AC_SY400_.jpg" alt="net issue" height="150px" width="150px"></div>
+        </div>
+        </marquee>
+    </div><hr>
+     <div id="signin">
+        <div class="person">See personalized recommendations</div>
+        <div class="button"><button><a href="sign in.html" style="color: black; font-family: Arial, Helvetica, sans-serif;;">Sign in</a></button></div>
+        <div class="newcustomer">New customer? start here</div>
+     </div><hr>
+     <footer id="footer">
+        <button id="button2">Back to top</button>
+        <div id="footer1">
+            <div id="follow">
+                <p>Get to Know Us</p>
+                <ul type="none">
+                    <li>About Us</li>
+                    <li>Careere</li>
+                    <li>Press Releases</li>
+                    <li>Amazon Sxience</li>
+                </ul>
+            </div>
+            <div id="follow1">
+                <p>Connect with Us</p>
+                <ul type="none">
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+            <div id="follow2">
+                <p>Make money with us</p>
+                <ul type="none">
+                    <li>Sell on Amazon</li>
+                    <li>Sell under amazon accelator</li>
+                    <li>Protect and build your brand</li>
+                    <li>Supply to amazon</li>
+                </ul>
+            </div>
+            <div id="follow3">
+                <p>Let us Help You</p>
+                <ul type="none">
+                    <li>Your account</li>
+                    <li>Returns center</li>
+                    <li>Recalls and Prosuct safety alerts</li>
+                    <li>Amazon app download</li>
+                </ul>
+            </div>
+        </div><hr>
+         <div id="thanks">Thank you for watching</div>
+         <div id="heart"><i class="fa-solid fa-heart fa-beat-fade" style="color: #db0a49;"></i></div>
+     </footer>
+</body>
+</html>
